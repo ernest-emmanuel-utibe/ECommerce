@@ -1,5 +1,6 @@
 package com.ecommerce.commons.configuration;
 
+import com.ecommerce.commons.decoder.CustomErrorDecoder;
 import feign.RequestInterceptor;
 import feign.codec.ErrorDecoder;
 import org.springframework.context.annotation.Bean;

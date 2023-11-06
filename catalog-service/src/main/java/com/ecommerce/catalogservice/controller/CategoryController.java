@@ -1,5 +1,9 @@
 package com.ecommerce.catalogservice.controller;
 
+import com.ecommerce.catalogservice.dto.request.CategoryRequest;
+import com.ecommerce.catalogservice.mapper.CategoryMapper;
+import com.ecommerce.commons.dto.catalog.category.CategoryResponse;
+import com.ecommerce.commons.dto.catalog.product.ProductResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
@@ -21,6 +25,7 @@ import java.util.List;
 @RequestMapping("/api/v1/catalog/categories")
 @Tag(name = "Category Controller")
 public class CategoryController {
+
     private final CategoryMapper categoryMapper;
 
     @GetMapping

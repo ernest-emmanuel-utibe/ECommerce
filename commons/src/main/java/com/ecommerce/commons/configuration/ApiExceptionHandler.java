@@ -1,5 +1,6 @@
 package com.ecommerce.commons.configuration;
 
+import com.ecommerce.commons.exceptions.*;
 import feign.FeignException;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -43,8 +44,8 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getMessage());
     }
 
-    @ExceptionHandler(AlreadyExistException.class)
-    private ResponseEntity<Object> handleAlreadyExistException(AlreadyExistException ex) {
+    @ExceptionHandler(AlreadyExistsException.class)
+    private ResponseEntity<Object> handleAlreadyExistException(AlreadyExistsException ex) {
         return ResponseEntity.status(HttpStatus.CONFLICT).body(ex.getMessage());
     }
 
