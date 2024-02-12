@@ -7,7 +7,6 @@ import com.ecommerce.catalogservice.repository.BannerRepository;
 import com.ecommerce.catalogservice.repository.CategoryRepository;
 import com.ecommerce.catalogservice.repository.ProductRepository;
 import com.ecommerce.catalogservice.service.CategoryService;
-
 import com.ecommerce.commons.exceptions.CategoryLevelException;
 import com.ecommerce.commons.feign.ImageClient;
 import lombok.RequiredArgsConstructor;
